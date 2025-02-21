@@ -46,7 +46,7 @@ export default function Header() {
         </AnimatePresence>
       </div>
       <div className="w-full h-[60%] flex justify-center items-center">
-        <div className="w-full flex h-full justify-around items-center text-sm sm:text-lg lg:text-lg lg:w-[35%]">
+        <div className="w-full flex h-full justify-around items-center text-sm sm:text-lg lg:text-lg lg:w-[40%]">
           اللهم صلِّ وسلم وبارك على سيدنا محمد وعلى آله وصحبه أجمعين
         </div>
       </div>

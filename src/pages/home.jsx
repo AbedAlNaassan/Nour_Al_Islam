@@ -3,8 +3,6 @@ import Header from "@/app/components/Header";
 import React, { useEffect } from "react";
 import "../app/styles/globals.css";
 import Footer from "@/app/components/Footer";
-import Image from "next/image";
-import QuraanBG from "../../public/QuraanBG.jpg";
 import { useState } from "react";
 import { getPrayerTimes } from "../app/utils/prayerTimesAPI";
 import PrayerTimes from "@/app/components/PrayerTimes";
@@ -51,19 +49,19 @@ export default function Home() {
   };
 
   return (
-    <div className="m-0 p-0 w-[100vw] h-[100vh] font-cairo">
+    <div className="m-0 p-0 w-[100vw] h-[100vh] font-cairo ">
       <Header />
 
-      <section className="w-full h-[75%] relative">
-        <Image
+      <section className="w-full h-[75%] bg-customBlueDarker lg:bg-[url('/ramadanWallpaper.jpg')] bg-cover bg-center ">
+        {/* <Image
           className="w-full h-full absolute top-0 left-0 z-0 "
           src={QuraanBG}
           alt="QuraanBG"
           quality={100}
-        />
+        /> */}
 
-        <div className="w-full sm:w-[50%] lg:w-[50%] relative  h-full flex justify-center items-center">
-          <div className="w-[65%] h-[70%] border border-white rounded-lg  shadow-lg shadow-gray-600 flex flex-col items-center gap-2">
+        <div className="w-full   h-full flex justify-center items-center">
+          <div className="w-[65%] h-[70%]  border border-white rounded-lg  shadow-lg shadow-gray-600 flex flex-col items-center gap-2 bg-customBlueDarker/50 ">
             <div className="w-[90%] h-[20%]  border-b border-white flex justify-end items-end ">
               <select
                 value={selectedCity}

@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        customBlue: "rgb(12, 38, 80)"
+        customBlue: "rgb(12, 38, 80)",
+        customBlueDarker: "rgb(4, 18, 40)"
       },
       fontFamily: {
         cairo: ["Cairo", "sans-serif"],
