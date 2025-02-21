@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import { getDate } from "../utils/prayerTimesAPI";
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
 
 export default function Header() {
   const [showFisrtDate, setShowFisrtDate] = useState(true);
@@ -47,10 +46,8 @@ export default function Header() {
         </AnimatePresence>
       </div>
       <div className="w-full h-[60%] flex justify-center items-center">
-        <div className="w-full flex h-full justify-around items-center  lg:w-[35%]">
-          <Link href={{ pathname: "/About" }}>About/عن</Link>
-          <Link href={{ pathname: "/Quraan" }}>Quraan/القرآن</Link>
-          <Link href={{ pathname: "/Home" }}>Home/الرئيسية</Link>
+        <div className="w-full flex h-full justify-around items-center text-sm sm:text-lg lg:text-lg lg:w-[35%]">
+          اللهم صلِّ وسلم وبارك على سيدنا محمد وعلى آله وصحبه أجمعين
         </div>
       </div>
     </header>

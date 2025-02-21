@@ -51,18 +51,18 @@ export default function Home() {
   };
 
   return (
-    <div className="m-0 p-0 w-[100vw] h-[100vh]">
+    <div className="m-0 p-0 w-[100vw] h-[100vh] font-cairo">
       <Header />
 
-      <section className="relative w-full h-[80%]  ">
+      <section className="w-full h-[75%] ">
         <Image
-          className="w-full h-full absolute top-0 left-0 z-0"
+          className="w-full h-[75%] absolute z-0"
           src={QuraanBG}
           alt="QuraanBG"
           quality={100}
         />
 
-        <div className="w-full sm:w-[50%] lg:w-[50%]  h-full absolute top-0 left-0 z-10 flex justify-center items-center">
+        <div className="w-full sm:w-[50%] lg:w-[50%]  h-full relative flex justify-center items-center">
           <div className="w-[60%] h-[70%] border border-white rounded-lg  shadow-lg shadow-gray-600 flex flex-col items-center gap-2">
             <div className="w-[90%] h-[20%]  border-b border-white flex justify-end items-end ">
               <select
