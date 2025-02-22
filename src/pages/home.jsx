@@ -6,6 +6,7 @@ import Footer from "@/app/components/Footer";
 import { useState } from "react";
 import { getPrayerTimes } from "../app/utils/prayerTimesAPI";
 import PrayerTimes from "@/app/components/PrayerTimes";
+import Image from "next/image";
 
 export default function Home() {
   const [prayerTimes, setPrayerTimes] = useState({});
@@ -52,16 +53,14 @@ export default function Home() {
     <div className="m-0 p-0 w-[100vw] h-[100vh] font-cairo ">
       <Header />
 
-      <section className="w-full h-[75%] bg-customBlueDarker lg:bg-[url('/ramadanWallpaper.jpg')] bg-cover bg-center ">
-        {/* <Image
-          className="w-full h-full absolute top-0 left-0 z-0 "
-          src={QuraanBG}
-          alt="QuraanBG"
-          quality={100}
-        /> */}
-
-        <div className="w-full   h-full flex justify-center items-center">
-          <div className="w-[65%] h-[70%]  border border-white rounded-lg  shadow-lg shadow-gray-600 flex flex-col items-center gap-2 bg-customBlueDarker/50 ">
+      <section className="w-full h-[75%] lg bg-customBlueDarker lg:bg-[url('/ramadanWallpaper.jpg')] bg-cover bg-center ">
+        <div className="w-full h-[15%] flex justify-around lg:hidden">
+          <Image src="/oil-lamp.png" alt="Oil Lamp" width={100} height={100} />
+          <Image src="/mosque.png" alt="Oil Lamp" width={100} height={100} />
+          <Image src="/oil-lamp.png" alt="Oil Lamp" width={100} height={100} />
+        </div>
+        <div className="w-full h-[90%]  lg:h-[85%]  flex justify-center items-center ">
+          <div className="w-[65%] h-[70%]  border border-white rounded-lg  shadow-lg shadow-gray-600 flex flex-col items-center gap-5 bg-customBlueDarker/50 ">
             <div className="w-[90%] h-[20%]  border-b border-white flex justify-end items-end ">
               <select
                 value={selectedCity}
