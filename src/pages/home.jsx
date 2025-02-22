@@ -60,7 +60,7 @@ export default function Home() {
           <Image src="/oil-lamp.png" alt="Oil Lamp" width={100} height={100} />
         </div>
         <div className="w-full h-[90%]  lg:h-[85%]  flex justify-center items-center ">
-          <div className="w-[65%] h-[70%]  border border-white rounded-lg  shadow-lg shadow-gray-600 flex flex-col items-center gap-5 bg-customBlueDarker/50 ">
+          <div className="w-[65%] h-[70%]  border border-white rounded-lg  shadow-lg shadow-gray-600 flex flex-col items-center justify-around gap-1 bg-customBlueDarker/50 ">
             <div className="w-[90%] h-[20%]  border-b border-white flex justify-end items-end ">
               <select
                 value={selectedCity}
